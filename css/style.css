@@ -1,27 +1,7 @@
 /*
  * Noto Sans Malayalam (Malayalam) http://www.google.com/https://github.com/kcdp/kcdp.github.io/blob/master/fonts/earlyaccess
  */
-@font-face {
-    font-family: 'Noto Sans Malayalam';
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Regular.eot);
-    src: url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Regular.eot?#iefix) format('embedded-opentype'),
-        url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Regular.woff2) format('woff2'),
-        url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Regular.woff) format('woff'),
-        url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Noto Sans Malayalam';
-    font-style: normal;
-    font-weight: 700;
-    src: url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Bold.eot);
-    src: url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Bold.eot?#iefix) format('embedded-opentype'),
-        url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Bold.woff2) format('woff2'),
-        url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Bold.woff) format('woff'),
-        url(https://github.com/kcdp/kcdp.github.io/blob/master/fonts/NotoSansMalayalam-Bold.ttf) format('truetype');
-}
+@import url(https://fonts.googleapis.com/earlyaccess/notosansmalayalam.css);
 
 body { font-family: 'Noto Sans Malayalam', sans-serif;
 }
