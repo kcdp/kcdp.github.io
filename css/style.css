@@ -71,7 +71,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   letter-spacing: 1px;
   color: #3B566E;
   text-decoration: none !important;
@@ -115,6 +115,22 @@ body {
 .faq .card .card-body p {
   margin-bottom: 14px;
 }
+
+/* Share Button */
+.sharede,.sharesimply{position:relative;}
+.sharesimply{margin:20px auto 0 auto;}
+.sharesimply a.fb,.sharesimply a.gp,.sharesimply a.tw,.sharesimply a.wa{position:relative;display:inline-block;margin:0 0 5px 0;color:#fff;text-shadow:none;padding:12px 0;width:15%;font-size:16px;font-weight:700;overflow:hidden;transition:all .3s}
+.sharesimply a.gp {background:#f20000;}
+.sharesimply a.fb {background:#516ca4;}
+.sharesimply a.tw {background:#00baff;}
+.sharesimply a.wa {background:#14e715;}
+.fb,.gp,.plus,.tw, .wa{font-size:2.5rem;vertical-align:middle;position:absolute;left:5px;top:5px;color:rgba(255,255,255,.5);transition:all .3s}
+.sharesimply a:hover .fb,.sharesimply a:hover .gp,.sharesimply a:hover .plus,.sharesimply a:hover .tw,.sharesimply a:hover .wa{color:rgba(255,255,255,.3);transform:scale(1.3) rotate(-20deg)}
+.sharesimply a.fb:hover,.sharesimply a.gp:hover,.sharesimply a.tw:hover,.sharesimply a.wa:hover{color:#fff;background:#333;}
+.sharesimply a.fb:active,.sharesimply a.gp:active,.sharesimply a.tw:active,.sharesimply a.wa:active{box-shadow:inset 0 1px 0 rgba(0,0,0,.16)}
+
+.bottomshare{display:block;padding:0 20px;margin-bottom:20px;text-align:center}
+
 
 @media (max-width: 991px) {
   .faq {
