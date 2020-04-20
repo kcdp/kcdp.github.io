@@ -10,7 +10,7 @@ body {
 .faq-section {
   background: #fdfdfd;
   min-height: 100vh;
-  padding: 10vh 0 0;
+  padding: 7vh 0 0;
 }
 
 .faq-title h2 {
@@ -200,4 +200,8 @@ body {
 span.badge {
     display: inline-block;
     padding: .4em 0;
+}
+
+.vh-100 {
+    height: 100vh;
 }
