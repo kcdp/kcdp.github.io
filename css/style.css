@@ -196,3 +196,8 @@ body {
     margin-top: 10px;
   }
 }
+
+span.badge {
+    display: inline-block;
+    padding: .4em 0;
+}
