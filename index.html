@@ -182,8 +182,8 @@
               <div id="faqCollapse-8" class="collapse" aria-labelledby="faqHeading-8" data-parent="#accordion">
                 <div class="card-body">
                   <p>
-                    തീർച്ചയായും നിങ്ങളുടെ വിലപ്പെട്ട രേഖകൾ plain text ആയി ഡാറ്റബസുകളിൽ സൂക്ഷിക്കാറില്ല. നിങ്ങളുടെ വിലപ്പെട്ട രേഖകൾ അല്ലെങ്കിൽ പാസ്സ്‌വേർഡ് പോലെയുള്ള വാക്കുകൾ എല്ലാം തന്നെ (encrypt) ചെയ്തു (MD5, SHA1, MySQL, NTLM, SHA256, SHA512 ) ഉള്ള
-                    ഹാഷ്കളിലേക്ക് മാറ്റിയാണ് ഡാറ്റാബേസുകളിൽ സ്റ്റോർ ചെയ്യപ്പെടാറുള്ളത്. ഇനി ഡാറ്റ അടിച്ചുകൊണ്ടു പോയാലും കിട്ടിയ ഡാറ്റ വായിക്കണമെങ്കിൽ ഡിക്ര്യപ്ട് (decrypt) ചെയേണ്ടി വെറും. 128-bit key with modern hardware is going to take around 500
+                    തീർച്ചയായും നിങ്ങളുടെ വിലപ്പെട്ട രേഖകൾ plain text ആയി ഡാറ്റബസുകളിൽ സൂക്ഷിക്കാറില്ല. നിങ്ങളുടെ വിലപ്പെട്ട രേഖകൾ അല്ലെങ്കിൽ പാസ്സ്‌വേർഡ് പോലെയുള്ള വാക്കുകൾ എല്ലാം തന്നെ (MD5, SHA1,NTLM, SHA256, SHA512 ) അൽഗോരിതം ഉള്ള ഹാഷ്കളിലേക്ക്
+                    മാറ്റിയാണ് ഡാറ്റാബേസുകളിൽ സ്റ്റോർ ചെയ്യപ്പെടാറുള്ളത്. ഇനി ഡാറ്റ അടിച്ചുകൊണ്ടു പോയാലും കിട്ടിയ ഡാറ്റ വായിക്കണമെങ്കിൽ ഈ ഹാഷ്കള്‍ ഡിക്ര്യപ്ട് (decrypt) ചെയേണ്ടി വെറും. 128-bit key with modern hardware is going to take around 500
                     billion years. വരെ എടുക്കാം.
                     <a href="https://en.wikipedia.org/wiki/Database_encryption" class="badge badge-primary">Database encryption</a>
                   </p>
@@ -248,8 +248,10 @@
               <div id="faqCollapse-11" class="collapse" aria-labelledby="faqHeading-11" data-parent="#accordion">
                 <div class="card-body">
                   <p>
-                    നമ്മൾ എല്ലാവരും ഓരോ വെബ്സൈറ്റിലും അംഗത്വം എടുക്കുന്നത് നമ്മുടെ ഇമെയിൽ ഐഡി കൊണ്ടാണെന്നു അറിയാമല്ലോ! എന്നാൽ ചില വിരുതന്മാർ ഇത്തരം കമ്പനികളുടെ ഡാറ്റാബേസ് മോഷ്ടിച്ചു ഡാർക്ക് വെബിൽ വിൽക്കാൻ വെക്കും. എന്നാൽ ചില ഡാറ്റബസുകൾ പബ്ലിക്കായി റിലീസ് ചെയ്യുകയും ചെയ്യും. ഫേസ്ബുക്, യാഹൂ, മൈകോസോഫ്റ്,അഡോബ് എന്നിങ്ങനെ ലോകത്തെ പല വൻകിട കമ്പനികളും ഇത്തരം <a href="https://en.wikipedia.org/wiki/List_of_data_breaches" class="badge badge-primary">ഡാറ്റ ബ്രീച്ചുകൾക്കു</a> വിധേയമായിട്ടുണ്ട്. ഈ ഡാറ്റ ബ്രീച്ചുകളിൽ നിങ്ങളുടെ അക്കൗണ്ട്  ഉണ്ടെങ്കിൽ മോസില്ലയുടെ ഫയർ ഫോക്സ് മോണിറ്റർ എന്നൊരു ടൂളിൽ നിങ്ങളുടെ ഇമെയിൽ ഐ.ഡി നൽകിയാൽ മതി. ഹാക്ക് ആയ ഏതൊക്കെ ഡാറ്റാബേസുകളിൽ നിങ്ങളുടെ ഇമെയിൽ ഐ.ഡി ഉണ്ടെന്നു പറഞ്ഞു തരും.
-<a href="https://monitor.firefox.com/" class="badge badge-primary">Firefox Monitor</a>
+                    നമ്മൾ എല്ലാവരും ഓരോ വെബ്സൈറ്റിലും അംഗത്വം എടുക്കുന്നത് നമ്മുടെ ഇമെയിൽ ഐഡി കൊണ്ടാണെന്നു അറിയാമല്ലോ! എന്നാൽ ചില വിരുതന്മാർ ഇത്തരം കമ്പനികളുടെ ഡാറ്റാബേസ് മോഷ്ടിച്ചു ഡാർക്ക് വെബിൽ വിൽക്കാൻ വെക്കും. എന്നാൽ ചില ഡാറ്റബസുകൾ പബ്ലിക്കായി
+                    റിലീസ് ചെയ്യുകയും ചെയ്യും. ഫേസ്ബുക്, യാഹൂ, മൈകോസോഫ്റ്,അഡോബ് എന്നിങ്ങനെ ലോകത്തെ പല വൻകിട കമ്പനികളും ഇത്തരം <a href="https://en.wikipedia.org/wiki/List_of_data_breaches" class="badge badge-primary">ഡാറ്റ ബ്രീച്ചുകൾക്കു</a>
+                    വിധേയമായിട്ടുണ്ട്. ഈ ഡാറ്റ ബ്രീച്ചുകളിൽ നിങ്ങളുടെ അക്കൗണ്ട് ഉണ്ടെങ്കിൽ മോസില്ലയുടെ ഫയർ ഫോക്സ് മോണിറ്റർ എന്നൊരു ടൂളിൽ നിങ്ങളുടെ ഇമെയിൽ ഐ.ഡി നൽകിയാൽ മതി. ഹാക്ക് ആയ ഏതൊക്കെ ഡാറ്റാബേസുകളിൽ നിങ്ങളുടെ ഇമെയിൽ ഐ.ഡി ഉണ്ടെന്നു പറഞ്ഞു തരും.
+                    <a href="https://monitor.firefox.com/" class="badge badge-primary">Firefox Monitor</a>
 
                   </p>
                 </div>
@@ -268,11 +270,11 @@
               <div id="faqCollapse-12" class="collapse" aria-labelledby="faqHeading-12" data-parent="#accordion">
                 <div class="card-body">
                   <p>
-    <li> Imprint </li>
-    <li> Privacy Policy </li>
-    <li>Terms & Conditions </li>
-    <li> Transparency Report </li>
-    <li> GDPR Compliance </li>
+                    <li> Imprint </li>
+                    <li> Privacy Policy </li>
+                    <li>Terms & Conditions </li>
+                    <li> Transparency Report </li>
+                    <li> GDPR Compliance </li>
 
                   </p>
                 </div>
