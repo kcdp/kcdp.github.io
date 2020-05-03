@@ -9,7 +9,7 @@ $(function() {
       pages: [],
       pageNumber: 1,
       results: [],
-      perPage: 20,
+      perPage: 10,
       loading: true,
       error: null
     },
