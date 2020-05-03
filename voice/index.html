@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Public Voice</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>Public Voice</h1>
+<div id="vueSearch" v-cloak>
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <label class="input-group-text" for="txtQuery">Search Terms</label>
+    </div>
+    <input type="text" id="txtQuery" v-model="search" class="form-control" placeholder="whatever you want to search for...">
+  </div>
+
+  <div v-for="(link, linkIndex) in results" v-bind:style="linkIndex + 1 < results.length ? 'margin-bottom: 1em;' : ''">
+    <div style="font-size: 1.25em;"><a v-bind:href="link.url" target="_blank" v-html="link.title"></a></div>
+    <div v-html="link.description"></div>
+    <div style="color: #080;">{{ link.url }}</div>
+  </div>
+
+  <div v-if="error" class="alert alert-danger text-center lead" v-html="error.replace(/`([^`]+)`/g, '<code>$1</code>')">{{error}}</div>
+  <div v-else-if="loading" class="text-center lead">Loading search results from Google Sheets...</div>
+  <div v-else-if="!results.length" class="text-center lead">
+    No results were found for <code>{{ search }}</code>.
+  </div>
+
+  <div class="text-center">
+    <div class="d-inline-block">
+      <div class="input-group mb-3" v-if="pages.length">
+          <div class="input-group-prepend">
+            <span class="input-group-text" for="txtQuery">Pages</span>
+          </div>
+        <div class="input-group-append">
+          <button v-for="page in pages" v-bind:class="'btn btn-outline-secondary' + (page.number == pageNumber ? ' active' : '')" type="button" style="float: initial;" v-on:click="changePage(page.number)" v-bind:title="page.caption">{{ page.text }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
